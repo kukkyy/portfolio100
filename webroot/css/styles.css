@@ -1,0 +1,101 @@
+body {
+  color: #333;
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background: #fff;
+  font-size: 18px;
+}
+
+.container {
+  width: 380px;
+  margin: 0 auto;
+}
+
+/* header, nav */
+
+header {
+  background: lime;
+  line-height: 3;
+  text-align: center;
+}
+
+nav {
+  font-size: 14px;
+  line-height: 30px;
+  background: #eee;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  padding: 0 38px 0 0;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  padding: 0 8px;
+}
+
+/* body */
+
+.page-title {
+  color: #ddd;
+  font-weight: normal;
+  border-bottom: solid #ddd 1px;
+}
+
+.message {
+  text-align: center;
+  line-height: 2;
+}
+
+.message.success {
+  background: aqua;
+  color: #fff;
+  opacity: 0.4;
+}
+
+.message.error {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: maroon;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.pull-right {
+  float: right;
+  padding: 17px;
+}
+
+.input {
+  overflow: hidden;
+}
+
+.input textarea {
+  width: 320px;
+  float: right;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+button {
+  margin-left: 60px;
+  padding: 5px 25px;
+}
+
+ul > li {
+  padding: 3px;
+}
+
+.error-message {
+  color: red;
+  padding-left: 60px;
+}
