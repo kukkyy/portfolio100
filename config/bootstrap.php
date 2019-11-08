@@ -151,7 +151,7 @@ if (!Configure::read('App.fullBaseUrl')) {
 }
 
 Cache::setConfig(Configure::consume('Cache'));
-Cache::setConfig('default', array(
+Cache::setConfig('heroku', array(
     'engine' => 'Memcached',
     'prefix' => 'mc_',
     'duration' => '+7 days',
