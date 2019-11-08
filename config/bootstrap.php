@@ -151,6 +151,17 @@ if (!Configure::read('App.fullBaseUrl')) {
 }
 
 Cache::setConfig(Configure::consume('Cache'));
+Cache::config('default', array(
+    'engine' => 'Memcached',
+    'prefix' => 'mc_',
+    'duration' => '+7 days',
+    'compress' => false,
+    'persistent' => 'memcachier',
+    'servers' => explode(',', getenv('MEMCACHIER_SERVERS')),
+    'login' => getenv('MEMCACHIER_USERNAME'),
+    'password' => getenv('MEMCACHIER_PASSWORD'),
+    'serialize' => 'php'
+));
 ConnectionManager::setConfig(Configure::consume('Datasources'));
 TransportFactory::setConfig(Configure::consume('EmailTransport'));
 Email::setConfig(Configure::consume('Email'));
