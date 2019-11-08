@@ -151,7 +151,7 @@ if (!Configure::read('App.fullBaseUrl')) {
 }
 
 Cache::setConfig(Configure::consume('Cache'));
-Cache::config('default', array(
+Cache::setConfig('default', array(
     'engine' => 'Memcached',
     'prefix' => 'mc_',
     'duration' => '+7 days',
