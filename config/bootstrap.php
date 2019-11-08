@@ -150,7 +150,7 @@ if (!Configure::read('App.fullBaseUrl')) {
     unset($httpHost, $s);
 }
 
-Cache::setConfig(Configure::consume('Cache'));
+// Cache::setConfig(Configure::consume('Cache'));
 Cache::setConfig('default', array(
     'engine' => 'Memcached',
     'prefix' => 'mc_',
