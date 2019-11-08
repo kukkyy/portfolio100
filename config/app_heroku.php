@@ -98,20 +98,20 @@ return [
      * Configure the cache adapters.
      */
     'Cache' => [
-      'default' => [
-          'className' => 'Memcached',
-          'prefix' => 'myapp_cake_',
-          'servers' => [env('MEMCACHIER_SERVERS')],
-          'username' => env('MEMCACHIER_USERNAME'),
-          'password' => env('MEMCACHIER_PASSWORD'),
-          'duration' => '+1440 minutes',
+      //'default' => [
+          // 'className' => 'Memcached',
+          // 'prefix' => 'myapp_cake_',
+          // 'servers' => [env('MEMCACHIER_SERVERS')],
+          // 'username' => env('MEMCACHIER_USERNAME'),
+          // 'password' => env('MEMCACHIER_PASSWORD'),
+          // 'duration' => '+1440 minutes',
 
           // 'engine' => 'Memcached',
           // 'compress' => false,
           // 'persistent' => 'memcachier',
           // 'login' => getenv('MEMCACHIER_USERNAME'),
           // 'serialize' => 'php'
-      ],
+    //  ],
 
       'session' => [
           'className' => 'Memcached',
