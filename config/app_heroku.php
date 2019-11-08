@@ -105,12 +105,11 @@ return [
           'username' => env('MEMCACHIER_USERNAME'),
           'password' => env('MEMCACHIER_PASSWORD'),
           'duration' => '+1440 minutes',
-
-          // 'engine' => 'Memcached',
-          // 'compress' => false,
-          // 'persistent' => 'memcachier',
-          // 'login' => getenv('MEMCACHIER_USERNAME'),
-          // 'serialize' => 'php'
+          'engine' => 'Memcached',
+          'compress' => false,
+          'persistent' => 'memcachier',
+          'login' => env('MEMCACHIER_USERNAME'),
+          'serialize' => 'php'
       ],
 
       'session' => [
